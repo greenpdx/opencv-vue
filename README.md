@@ -10,3 +10,4 @@ cd opencv-vue
 npm install
 npm run serve
 ```
+* Tested with opencv.js version 4.0.0
