@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Main msg="Welcome to Your Vue.js App"/>
+    <Main msg="OpenCV js Face detection using Vue"/>
   </div>
 </template>
 
@@ -11,6 +11,10 @@ export default {
   name: 'app',
   components: {
     Main
+  },
+  created(){
+  },
+  mounted(){
   }
 }
 </script>
