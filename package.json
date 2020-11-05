@@ -15,8 +15,9 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.4.0",
     "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
+    "@vue/cli-service": "^4.5.8",
     "babel-eslint": "^10.0.1",
+    "copy-webpack-plugin": "^6.3.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "vue-template-compiler": "^2.5.21"
@@ -30,7 +31,10 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": 0,
+      "no-unused-vars": 0
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

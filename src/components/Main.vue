@@ -8,7 +8,7 @@
     <div>
       <canvas id="srcimg" ref="srcimg" class="imgcanvas"></canvas>
       <canvas id="dstimg" ref="dstimg" class="imgcanvas"></canvas>
-      <img src="@/assets/zoey-pic.jpg" ref="img" class="img"></img>
+      <img src="@/assets/zoey-pic.jpg" ref="img" class="img"/>
     </div>
   </div>
 </template>
@@ -44,7 +44,7 @@ export default {
 
     let requestFileSystem = window.requestFileSystem || window.webkitRequestFileSystem;
 
-    let fs = requestFileSystem(TEMPORARY, 1024*1024, (fs) => {
+    let fs = requestFileSystem(window.TEMPORARY, 1024*1024, (fs) => {
       console.log(fs)
       let rdr = fs.root.createReader()
       let ent = []
